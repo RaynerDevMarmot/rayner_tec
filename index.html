@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestros Servicios y Precios - RAYNER DEVMARMOT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <style>
+      /* Estilos personalizados para el template de precios de servicios */
+      .pricing-table {
+        margin-top: 3rem;
+      }
+      .pricing-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+      }
+      .pricing-card .card-header {
+        background-color: hsl(204, 86%, 53%); /* Color primario de Bulma */
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      .pricing-card.is-primary .card-header {
+        background-color: hsl(
+          171,
+          100%,
+          41%
+        ); /* Color secundario para el servicio destacado */
+      }
+      .pricing-card .card-header p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      .pricing-card .card-content {
+        flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .pricing-card .price {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .pricing-card .price small {
+        font-size: 1rem;
+        font-weight: normal;
+        vertical-align: super;
+      }
+      .pricing-card .features ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .pricing-card .features li {
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+      .pricing-card .features li .icon {
+        margin-right: 0.5rem;
+        color: hsl(141, 71%, 48%); /* Color de éxito de Bulma */
+      }
+      .pricing-card .card-footer {
+        padding: 1.5rem;
+        text-align: center;
+        border-top: 1px solid #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <img
+            src="Diseño sin título.png"
+            alt="RAYNER DEVMARMOT Logo"
+            style="max-height: 120px; margin-bottom: 1rem"
+          />
+          <p class="title">Nuestros Servicios y Precios</p>
+          <p class="subtitle">Encuentra el servicio técnico perfecto para ti</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-table">
+      <div class="container">
+        <div class="columns is-multiline is-centered">
+          <div class="column is-4-desktop is-6-tablet">
+            <div class="card pricing-card">
+              <header class="card-header">
+                <p class="card-header-title is-justify-content-center">
+                  Instalación de Windows
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="price">$30</div>
+                <div class="features content">
+                  <ul>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Instalación limpia de OS
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Drivers actualizados
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Configuración inicial
+                    </li>
+                    <li>
+                      <span class="icon"
+                        ><i class="fas fa-times has-text-danger"></i
+                      ></span>
+                      Respaldo de archivos
+                    </li>
+                    <li>
+                      <span class="icon"
+                        ><i class="fas fa-times has-text-danger"></i
+                      ></span>
+                      Software adicional
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="button is-primary is-fullwidth open-modal"
+                    data-service="Instalación de Windows"
+                    >Solicitar Servicio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4-desktop is-6-tablet">
+            <div class="card pricing-card is-primary">
+              <header class="card-header">
+                <p class="card-header-title is-justify-content-center">
+                  Mantenimiento de PC
+                </p>
+                <p
+                  class="card-header-icon has-text-white"
+                  aria-label="destacado"
+                >
+                  <span class="tag is-white is-rounded">Recomendado</span>
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="price has-text-info">$50</div>
+                <div class="features content">
+                  <ul>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Limpieza interna (hardware)
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Optimización de software
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Eliminación de virus
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Actualización de drivers
+                    </li>
+                    <li>
+                      <span class="icon"
+                        ><i class="fas fa-times has-text-danger"></i
+                      ></span>
+                      Recuperación de datos
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="button is-info is-fullwidth is-large open-modal"
+                    data-service="Mantenimiento de PC"
+                    >¡Contratar Ahora!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4-desktop is-6-tablet">
+            <div class="card pricing-card">
+              <header class="card-header">
+                <p class="card-header-title is-justify-content-center">
+                  Recuperación de Datos
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="price">$80<small>+ (según caso)</small></div>
+                <div class="features content">
+                  <ul>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Diagnóstico inicial
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Recuperación de discos dañados
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Recuperación de archivos borrados
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Respaldo en nuevo medio
+                    </li>
+                    <li>
+                      <span class="icon"><i class="fas fa-check"></i></span>
+                      Confidencialidad total
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="button is-primary is-fullwidth open-modal"
+                    data-service="Recuperación de Datos"
+                    >Pedir Presupuesto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Plantilla de precios de servicios creada con Bulma. Todos los derechos
+          reservados &copy; 2025.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+
+    <div id="service-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h3 class="title is-4 has-text-centered">
+            Solicitar Servicio: <span id="modal-service-name"></span>
+          </h3>
+          <form id="service-form">
+            <div class="field">
+              <label class="label">Nombre completo</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Tu nombre"
+                  name="nombre"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Número de Teléfono</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="tel"
+                  placeholder="Ej: 0412-1234567"
+                  name="telefono"
+                  required
+                />
+              </div>
+            </div>
+            <input type="hidden" name="servicio" id="hidden-service-name" />
+            <div class="field is-grouped is-grouped-centered">
+              <div class="control">
+                <button type="submit" class="button is-primary">
+                  Enviar Solicitud
+                </button>
+              </div>
+              <div class="control">
+                <button type="button" class="button is-light close-modal">
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="form-message" class="notification is-hidden mt-4"></div>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "open-modal" buttons
+        const openModalButtons = document.querySelectorAll(".open-modal");
+        const modal = document.getElementById("service-modal");
+        const modalServiceName = document.getElementById("modal-service-name");
+        const hiddenServiceName = document.getElementById(
+          "hidden-service-name"
+        );
+        const formMessage = document.getElementById("form-message");
+        const serviceForm = document.getElementById("service-form");
+
+        function openModal(serviceName) {
+          modalServiceName.textContent = serviceName;
+          hiddenServiceName.value = serviceName; // Set hidden field for backend
+          modal.classList.add("is-active");
+          formMessage.classList.add("is-hidden"); // Hide previous messages
+          formMessage.classList.remove("is-success", "is-danger"); // Reset message styling
+          serviceForm.reset(); // Clear form fields
+        }
+
+        function closeModal() {
+          modal.classList.remove("is-active");
+        }
+
+        // Add click event to each "open-modal" button
+        openModalButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const serviceName = button.getAttribute("data-service");
+            openModal(serviceName);
+          });
+        });
+
+        // Add click event to close buttons/background
+        document
+          .querySelectorAll(".close-modal, .modal-background, .modal-close")
+          .forEach((element) => {
+            element.addEventListener("click", closeModal);
+          });
+
+        // Handle form submission
+        serviceForm.addEventListener("submit", async (event) => {
+          event.preventDefault(); // Prevent default form submission
+
+          const formData = new FormData(serviceForm);
+          const data = Object.fromEntries(formData.entries());
+
+          try {
+            // *** AQUÍ DEBES PONER LA URL DE TU ENDPOINT DE GO EN RAILWAY ***
+            // Por ejemplo: 'https://tu-app-de-go-en-railway.railway.app/submit-service'
+            const response = await fetch("/submit-service", {
+              // Usamos una ruta relativa por ahora
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+              formMessage.textContent =
+                "¡Solicitud enviada con éxito! Nos pondremos en contacto pronto.";
+              formMessage.classList.remove("is-hidden", "is-danger");
+              formMessage.classList.add("is-success");
+              serviceForm.reset(); // Limpia el formulario
+              setTimeout(closeModal, 3000); // Cierra el modal después de 3 segundos
+            } else {
+              const errorData = await response.json();
+              formMessage.textContent = `Error al enviar la solicitud: ${
+                errorData.message || "Ocurrió un error."
+              }`;
+              formMessage.classList.remove("is-hidden", "is-success");
+              formMessage.classList.add("is-danger");
+            }
+          } catch (error) {
+            formMessage.textContent = `Error de conexión: ${error.message}. Por favor, inténtalo de nuevo.`;
+            formMessage.classList.remove("is-hidden", "is-success");
+            formMessage.classList.add("is-danger");
+            console.error("Error al enviar la solicitud:", error);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
